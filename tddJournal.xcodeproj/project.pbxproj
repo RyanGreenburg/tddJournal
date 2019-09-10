@@ -8,11 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		624275012326A0B200198C24 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624275002326A0B200198C24 /* AppDelegate.swift */; };
-		624275032326A0B200198C24 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624275022326A0B200198C24 /* ViewController.swift */; };
 		624275062326A0B200198C24 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624275042326A0B200198C24 /* Main.storyboard */; };
 		624275082326A0B300198C24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 624275072326A0B300198C24 /* Assets.xcassets */; };
 		6242750B2326A0B300198C24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 624275092326A0B300198C24 /* LaunchScreen.storyboard */; };
-		624275162326A0B300198C24 /* tddJournalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624275152326A0B300198C24 /* tddJournalTests.swift */; };
+		624275262326BEC800198C24 /* Journal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624275252326BEC800198C24 /* Journal.swift */; };
+		627D51C7232701AC00F6A622 /* JournalTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D51C6232701AC00F6A622 /* JournalTesting.swift */; };
+		627D51C92327038900F6A622 /* JournalControllerTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D51C82327038900F6A622 /* JournalControllerTesting.swift */; };
+		627D51CC232704D000F6A622 /* JournalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D51CB232704D000F6A622 /* JournalController.swift */; };
+		627D51D02327F0F900F6A622 /* EntryTesting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 627D51CF2327F0F900F6A622 /* EntryTesting.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,14 +31,17 @@
 /* Begin PBXFileReference section */
 		624274FD2326A0B200198C24 /* tddJournal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tddJournal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		624275002326A0B200198C24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		624275022326A0B200198C24 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		624275052326A0B200198C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		624275072326A0B300198C24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6242750A2326A0B300198C24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6242750C2326A0B300198C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		624275112326A0B300198C24 /* tddJournalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tddJournalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		624275152326A0B300198C24 /* tddJournalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tddJournalTests.swift; sourceTree = "<group>"; };
 		624275172326A0B300198C24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		624275252326BEC800198C24 /* Journal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Journal.swift; sourceTree = "<group>"; };
+		627D51C6232701AC00F6A622 /* JournalTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalTesting.swift; sourceTree = "<group>"; };
+		627D51C82327038900F6A622 /* JournalControllerTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalControllerTesting.swift; sourceTree = "<group>"; };
+		627D51CB232704D000F6A622 /* JournalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalController.swift; sourceTree = "<group>"; };
+		627D51CF2327F0F900F6A622 /* EntryTesting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryTesting.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,12 +83,10 @@
 		624274FF2326A0B200198C24 /* tddJournal */ = {
 			isa = PBXGroup;
 			children = (
-				624275002326A0B200198C24 /* AppDelegate.swift */,
-				624275022326A0B200198C24 /* ViewController.swift */,
-				624275042326A0B200198C24 /* Main.storyboard */,
-				624275072326A0B300198C24 /* Assets.xcassets */,
-				624275092326A0B300198C24 /* LaunchScreen.storyboard */,
-				6242750C2326A0B300198C24 /* Info.plist */,
+				624275272326BED100198C24 /* Models */,
+				627D51CD232704D600F6A622 /* Controllers */,
+				624275212326A84D00198C24 /* Views */,
+				624275202326A84300198C24 /* Resources */,
 			);
 			path = tddJournal;
 			sourceTree = "<group>";
@@ -90,10 +94,79 @@
 		624275142326A0B300198C24 /* tddJournalTests */ = {
 			isa = PBXGroup;
 			children = (
-				624275152326A0B300198C24 /* tddJournalTests.swift */,
+				624275282326BFE300198C24 /* ModelTests */,
+				627D51CA2327038D00F6A622 /* ModelControllerTests */,
 				624275172326A0B300198C24 /* Info.plist */,
 			);
 			path = tddJournalTests;
+			sourceTree = "<group>";
+		};
+		624275202326A84300198C24 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				624275002326A0B200198C24 /* AppDelegate.swift */,
+				624275072326A0B300198C24 /* Assets.xcassets */,
+				624275092326A0B300198C24 /* LaunchScreen.storyboard */,
+				6242750C2326A0B300198C24 /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		624275212326A84D00198C24 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				624275222326A85800198C24 /* Storyboards */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		624275222326A85800198C24 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				624275042326A0B200198C24 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		624275272326BED100198C24 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				624275252326BEC800198C24 /* Journal.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		624275282326BFE300198C24 /* ModelTests */ = {
+			isa = PBXGroup;
+			children = (
+				627D51C6232701AC00F6A622 /* JournalTesting.swift */,
+				627D51CF2327F0F900F6A622 /* EntryTesting.swift */,
+			);
+			path = ModelTests;
+			sourceTree = "<group>";
+		};
+		627D51CA2327038D00F6A622 /* ModelControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				627D51C82327038900F6A622 /* JournalControllerTesting.swift */,
+			);
+			path = ModelControllerTests;
+			sourceTree = "<group>";
+		};
+		627D51CD232704D600F6A622 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				627D51CE232704DD00F6A622 /* ModelControllers */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		627D51CE232704DD00F6A622 /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				627D51CB232704D000F6A622 /* JournalController.swift */,
+			);
+			path = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,8 +270,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624275032326A0B200198C24 /* ViewController.swift in Sources */,
 				624275012326A0B200198C24 /* AppDelegate.swift in Sources */,
+				627D51CC232704D000F6A622 /* JournalController.swift in Sources */,
+				624275262326BEC800198C24 /* Journal.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,7 +280,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				624275162326A0B300198C24 /* tddJournalTests.swift in Sources */,
+				627D51D02327F0F900F6A622 /* EntryTesting.swift in Sources */,
+				627D51C92327038900F6A622 /* JournalControllerTesting.swift in Sources */,
+				627D51C7232701AC00F6A622 /* JournalTesting.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,7 +437,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = tddJournal/Info.plist;
+				DEVELOPMENT_TEAM = H8C27D6HU3;
+				INFOPLIST_FILE = "$(SRCROOT)/tddJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -378,7 +455,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = tddJournal/Info.plist;
+				DEVELOPMENT_TEAM = H8C27D6HU3;
+				INFOPLIST_FILE = "$(SRCROOT)/tddJournal/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -396,6 +474,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8C27D6HU3;
 				INFOPLIST_FILE = tddJournalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -416,6 +495,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = H8C27D6HU3;
 				INFOPLIST_FILE = tddJournalTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
